@@ -1,4 +1,4 @@
-package com.github.quellenni.cities.api;
+package com.github.quellenni.cities.api.countries;
 
 
 import com.github.quellenni.cities.api.countries.Country;
