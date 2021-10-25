@@ -1,7 +1,6 @@
 package com.github.quellenni.cities.api.countries;
 
 
-import com.github.quellenni.cities.api.countries.Country;
 import com.github.quellenni.cities.api.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -11,8 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
- import java.util.Optional;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/countries")

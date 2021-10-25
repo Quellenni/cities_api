@@ -1,7 +1,6 @@
 package com.github.quellenni.cities.api.states;
 
 
-import com.github.quellenni.cities.api.repository.CountryRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +18,7 @@ public class StateResource {
     }
 
     @GetMapping
-    public List<State> staties(){
+    public List<State> staties() {
         return repository.findAll();
     }
 

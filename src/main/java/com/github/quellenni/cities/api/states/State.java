@@ -1,6 +1,5 @@
 package com.github.quellenni.cities.api.states;
 
-import com.github.quellenni.cities.api.countries.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
@@ -27,9 +26,9 @@ public class State {
 
     private Integer ibge;
 
-  //1st
-  @Column(name = "pais")
-  private Integer countryId;
+    //1st
+    @Column(name = "pais")
+    private Integer countryId;
 
     /*2nd - @ManyToOne
     @ManyToOne

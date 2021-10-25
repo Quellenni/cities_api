@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class CitiesApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CitiesApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(CitiesApplication.class, args);
+    }
 
 }

@@ -7,39 +7,38 @@ import org.hibernate.annotations.TypeDefs;
 import org.springframework.data.geo.Point;
 
 import javax.persistence.Column;
-import javax.persistence.Id;
-
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
-    @Entity
-    @Table(name = "cidade")
-    @TypeDefs(value = {
-            @TypeDef(name = "point", typeClass = PointType.class)
-    })
-    public class City {
+@Entity
+@Table(name = "cidade")
+@TypeDefs(value = {
+        @TypeDef(name = "point", typeClass = PointType.class)
+})
+public class City {
 
-        @Id
-        private Long id;
+    @Id
+    private Long id;
 
-        @Column(name = "nome")
-        private String name;
+    @Column(name = "nome")
+    private String name;
 
-        private Integer uf;
+    private Integer uf;
 
-        private Integer ibge;
+    private Integer ibge;
 
-        // 1st
-        @Column(name = "lat_lon")
-        private String geolocation;
+    // 1st
+    @Column(name = "lat_lon")
+    private String geolocation;
 
-        // 2nd
-        @Type(type = "point")
-        @Column(name = "lat_lon", updatable = false, insertable = false)
-        private Point location;
+    // 2nd
+    @Type(type = "point")
+    @Column(name = "lat_lon", updatable = false, insertable = false)
+    private Point location;
 
-        public City() {
-        }
+    public City() {
+    }
 
       /*  public City(final Long id, final String name, final Integer uf, final Integer ibge,
                     final String geolacation, final Point location) {
@@ -51,27 +50,27 @@ import javax.persistence.Table;
             this.location = location;
         }*/
 
-        public Long getId() {
-            return id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public Integer getUf() {
-            return uf;
-        }
-
-        public Integer getIbge() {
-            return ibge;
-        }
-
-        public String getGeolocation() {
-            return geolocation;
-        }
-
-        public Point getLocation() {
-            return location;
-        }
+    public Long getId() {
+        return id;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getUf() {
+        return uf;
+    }
+
+    public Integer getIbge() {
+        return ibge;
+    }
+
+    public String getGeolocation() {
+        return geolocation;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
+}

@@ -23,7 +23,7 @@ public class Country {
 
     private Integer bacen;
 
-    public Country(){
+    public Country() {
     }
 
     public Long getId() {
