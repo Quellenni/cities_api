@@ -63,12 +63,13 @@ public class State {
         return ddd;
     }
 
-    /*public Country getCountry() {
-        return country;
-    }*/
-
     public Integer getCountryId() {
         return countryId;
     }
+
+    /*public Country getCountry() {
+        return country;
+    }*/
 }
+
 
