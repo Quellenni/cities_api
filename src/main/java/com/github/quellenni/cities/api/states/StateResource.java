@@ -11,14 +11,14 @@ import java.util.List;
 @RequestMapping("/states")
 public class StateResource {
 
-    private StateRepository repository;
+    private final StateRepository repository;
 
     public StateResource(final StateRepository repository) {
         this.repository = repository;
     }
 
     @GetMapping
-    public List<State> staties() {
+    public List<State> states() {
         return repository.findAll();
     }
 
