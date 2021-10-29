@@ -1,5 +1,5 @@
 # Construindo uma API REST de consultas de cidades do Brasil.
-Nesse projeto desenvolvemos uma API Rest de consulta de cidades do Brasil com dados comparativos e criamos um serviço de cálculo de distância entre cidades. 
+Neste projeto desenvolvemos uma API Rest de consulta de cidades do Brasil com dados comparativos e criamos um serviço de cálculo de distância entre cidades. 
 Aprendemos também como testar a API usando o Postman e Heroku.
 O projeto foi desenvolvido durante o bootcamp NTTDATA Quality Assurance Beginner #3, oferecido pela Digital Innovation One em parceria com a NTTDATA.
 
